@@ -26,21 +26,176 @@ public class vista extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        txtPBono = new javax.swing.JTextField();
+        txtDImpuesto = new javax.swing.JTextField();
+        txtTPagar = new javax.swing.JTextField();
+        txtPHImpartidas = new javax.swing.JTextField();
+        jTextField13 = new javax.swing.JTextField();
+        jSpinner1 = new javax.swing.JSpinner();
+        txtNombre = new javax.swing.JTextField();
+        txtDomicilio = new javax.swing.JTextField();
+        txtPHBase = new javax.swing.JTextField();
+        txtHImpartidas = new javax.swing.JTextField();
+        btnLimpiar = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
+        btnCerrar = new javax.swing.JButton();
+        ComboNivel = new javax.swing.JComboBox<>();
+        txtNumDoc = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        btnNuevo = new javax.swing.JButton();
+        btnGuardar = new javax.swing.JButton();
+        btnMostrar = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        jLabel2.setText("Domicilio");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(30, 90, 51, 16);
+
+        jLabel3.setText("Nivel");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(30, 120, 27, 16);
+
+        jLabel4.setText("Pago por hora base");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(30, 150, 110, 16);
+
+        jLabel5.setText("Horas impartidas");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(30, 180, 90, 16);
+
+        jLabel9.setText("Num. Docente");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(30, 30, 77, 16);
+
+        jLabel11.setText("Nombre");
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(30, 60, 44, 16);
+
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calculos por Pago", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("SansSerif", 0, 14))); // NOI18N
+        jPanel1.setLayout(null);
+
+        jLabel1.setText("Descuento por impuesto");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(10, 90, 130, 20);
+
+        jLabel6.setText("Pago por horas impartidas");
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(10, 20, 139, 20);
+
+        jLabel7.setText("Hijos");
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(10, 50, 27, 20);
+
+        jLabel8.setText("Pago por bono");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(120, 50, 90, 20);
+
+        jLabel10.setText("Total a pagar");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(10, 120, 80, 20);
+        jPanel1.add(txtPBono);
+        txtPBono.setBounds(210, 50, 110, 22);
+        jPanel1.add(txtDImpuesto);
+        txtDImpuesto.setBounds(160, 90, 110, 22);
+        jPanel1.add(txtTPagar);
+        txtTPagar.setBounds(160, 120, 110, 22);
+        jPanel1.add(txtPHImpartidas);
+        txtPHImpartidas.setBounds(160, 20, 110, 22);
+        jPanel1.add(jTextField13);
+        jTextField13.setBounds(160, 20, 110, 22);
+        jPanel1.add(jSpinner1);
+        jSpinner1.setBounds(50, 50, 50, 22);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(20, 220, 410, 150);
+        getContentPane().add(txtNombre);
+        txtNombre.setBounds(80, 60, 150, 22);
+        getContentPane().add(txtDomicilio);
+        txtDomicilio.setBounds(90, 90, 140, 22);
+        getContentPane().add(txtPHBase);
+        txtPHBase.setBounds(140, 150, 90, 22);
+        getContentPane().add(txtHImpartidas);
+        txtHImpartidas.setBounds(130, 180, 64, 22);
+
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnLimpiar);
+        btnLimpiar.setBounds(440, 240, 90, 23);
+
+        btnCancelar.setText("Cancelar");
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCancelar);
+        btnCancelar.setBounds(440, 290, 90, 23);
+
+        btnCerrar.setText("Cerrar");
+        getContentPane().add(btnCerrar);
+        btnCerrar.setBounds(440, 340, 90, 23);
+
+        ComboNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Licenciatura", "Maestro en ciencias", "Doctor" }));
+        getContentPane().add(ComboNivel);
+        ComboNivel.setBounds(80, 120, 100, 22);
+        getContentPane().add(txtNumDoc);
+        txtNumDoc.setBounds(120, 30, 110, 22);
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Acciones", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 0, 14))); // NOI18N
+
+        btnNuevo.setText("Nuevo");
+        btnNuevo.setPreferredSize(new java.awt.Dimension(72, 50));
+        jPanel2.add(btnNuevo);
+
+        btnGuardar.setText("Guardar");
+        btnGuardar.setPreferredSize(new java.awt.Dimension(72, 50));
+        jPanel2.add(btnGuardar);
+
+        btnMostrar.setText("Mostrar");
+        btnMostrar.setPreferredSize(new java.awt.Dimension(72, 50));
+        btnMostrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMostrarActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnMostrar);
+
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(260, 40, 280, 100);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLimpiarActionPerformed
+
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarActionPerformed
+
+    private void btnMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMostrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +233,36 @@ public class vista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JComboBox<String> ComboNivel;
+    public javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnCerrar;
+    public javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnLimpiar;
+    public javax.swing.JButton btnMostrar;
+    public javax.swing.JButton btnNuevo;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    public javax.swing.JSpinner jSpinner1;
+    private javax.swing.JTextField jTextField13;
+    public javax.swing.JTextField txtDImpuesto;
+    public javax.swing.JTextField txtDomicilio;
+    public javax.swing.JTextField txtHImpartidas;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtNumDoc;
+    public javax.swing.JTextField txtPBono;
+    public javax.swing.JTextField txtPHBase;
+    public javax.swing.JTextField txtPHImpartidas;
+    public javax.swing.JTextField txtTPagar;
     // End of variables declaration//GEN-END:variables
 }
